@@ -10,29 +10,14 @@ html, body {
 
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-    background-image: url('https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?auto=format&fit=crop&w=2074&q=80');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    color: #ffffff;
+    background: #ffffff;
+    color: #000000;
     min-height: 100vh;
     position: relative;
 }
 
 .overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(
-        135deg,
-        rgba(15, 35, 25, 0.85) 0%,
-        rgba(20, 45, 35, 0.75) 50%,
-        rgba(10, 30, 20, 0.85) 100%
-    );
-    z-index: 1;
+    display: none;
 }
 
 .content {
@@ -57,7 +42,6 @@ h1 {
     font-weight: 500;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
 }
 
 main {
@@ -81,37 +65,12 @@ main {
     background: linear-gradient(
         90deg,
         transparent,
-        rgba(255, 255, 255, 0.6),
+        rgba(0, 0, 0, 0.4),
         transparent
     );
     margin-bottom: 3rem;
 }
 
-.contact-prompt {
-    font-size: 0.85rem;
-    font-weight: 400;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    opacity: 0.7;
-    margin-bottom: 0.75rem;
-}
-
-.contact-link {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 1.1rem;
-    font-weight: 400;
-    letter-spacing: 0.05em;
-    padding: 0.75rem 2rem;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 2px;
-    transition: all 0.3s ease;
-}
-
-.contact-link:hover {
-    background: rgba(255, 255, 255, 0.1);
-    border-color: rgba(255, 255, 255, 0.5);
-}
 
 footer {
     position: absolute;
